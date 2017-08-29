@@ -201,7 +201,8 @@ public class Executavel extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMostrarDadosActionPerformed
 
     private void btnApagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagarActionPerformed
-        JOptionPane.showInputDialog(null,"Introduza o nr da conta a conta a ser apagada");
+       String nConta= JOptionPane.showInputDialog(null,"Introduza o nr da conta a conta a ser apagada");
+        Salvar.bank.remover(Salvar.bank.getContas().get(WIDTH).getnDeConta().equals(nConta));
     }//GEN-LAST:event_btnApagarActionPerformed
 
     /**
